@@ -77,7 +77,7 @@ void handleClient(SOCKET clientSocket) {
 */
 
 void handleClient(SOCKET clientSocket) {
-	while (1) {
+	while (true) {
 		char lengthBuffer[4];
 		int bytesRead = recv(clientSocket, lengthBuffer, sizeof(lengthBuffer), 0);
 		if (bytesRead <= 0) {
